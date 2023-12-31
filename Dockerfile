@@ -1,6 +1,8 @@
-FROM python:3.6-alpine
+FROM node:18-alpine3.15
 
 LABEL version="1.0.0"
+
+RUN apk add --no-cache python3 py3-pip
 
 # https://github.com/aws/aws-cli/blob/master/CHANGELOG.rst
 ENV AWSCLI_VERSION='1.17.12'
