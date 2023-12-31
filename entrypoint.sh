@@ -34,7 +34,7 @@ aws_secret_access_key = ${AWS_SECRET_ACCESS_KEY}" > ~/.aws/credentials
 echo "Install dependencies"
 npm install
 
-echo "Run yarn build"
+echo "Run npm build"
 npm run build
 
 echo "Copying to website folder"
